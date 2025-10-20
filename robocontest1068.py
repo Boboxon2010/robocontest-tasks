@@ -1,2 +1,6 @@
 # masala: Sirli o'rmonlarga yashiringan Robolandiya davlatida saylov o'tqazilmoqchi va saylov uchun odamlarni ro'yhatdan o'tkazishda bazi odamlar birinchi familyasini so'ng ismini kiritishgan. Sizning vazifangiz birinchi ism keyin familya korinishida chiqarishingiz kerak. (Robolandiya davlatida familyalar ″v″ harfi bilan tugaydi chiquvchi malumotlar: ism familiya ko'rinishida chiqarish kerak)
-a=input().split()
+a,b=input().split()
+if a.endswith("v"):
+    print(b,a)
+else:
+    print(a,b)
