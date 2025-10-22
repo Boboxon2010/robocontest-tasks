@@ -1,7 +1,14 @@
-# Uchta o’quvchiga savatdagi N ta olmani necha xil usulda bo’lib berish mumkin? Savatda olma qolmasligi va har bir o’quvchida kamida ikkita olma bo’lishi kerak
-from math import comb
-N=int(input())
-if N<6:
-    print(0)
-else:
-    print(comb(N-1-2*3,3-1))
+import math
+
+def olma_taqsimlash(N):
+    if N < 6:
+        return 0  # Agar N < 6 bo'lsa, hech qanday usul yo'q, chunki har bir o'quvchiga kamida 2 ta olma berish kerak
+    
+    # Kombinatorik hisoblash: C(N-4, 2)
+    return math.comb(N - 4, 2)
+
+# Kirish ma'lumotlarini olish
+N = int(input())
+
+# Javobni chiqarish
+print(olma_taqsimlash(N))
