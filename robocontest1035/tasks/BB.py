@@ -1,3 +1,2 @@
-n=int(input())
-for i in range(1,n):
+A,B=map(int,input().split())
     
