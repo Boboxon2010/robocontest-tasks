@@ -1,5 +1,5 @@
 a,b=map(int,input().split())
-if pow(a,2)<pow(b,2):
+if a+b>100:
     print('yes')
 else:
     print('no')
