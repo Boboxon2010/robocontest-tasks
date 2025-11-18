@@ -1,5 +1,6 @@
 a,b=map(float,input().split())
-
-while a>b:
+s=0
+while a>=b:
     a=a-b
-print(f"{a:.2f}")
+    s+=1
+print(s)
