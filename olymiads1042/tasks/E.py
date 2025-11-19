@@ -1,9 +1,13 @@
-# Bu fayl avtomatik tarzda yaratildi.
-# Fayl nomi: E.py
+n = int(input())
+k = 1
+i=2
+if n==1:
+    print(0)
 
-def main():
-    print(f"Salom, men E.py fayliman.")
-    # Faylga xos mantig'ingizni shu yerga qo'shing.
+else:
+    while n > i:
+        i=i+i
+        
+        k = k + 1
 
-if __name__ == "__main__":
-    main()
+    print(k)

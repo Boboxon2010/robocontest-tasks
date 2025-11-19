@@ -1,9 +1,12 @@
-# Bu fayl avtomatik tarzda yaratildi.
-# Fayl nomi: D.py
-
-def main():
-    print(f"Salom, men D.py fayliman.")
-    # Faylga xos mantig'ingizni shu yerga qo'shing.
-
-if __name__ == "__main__":
-    main()
+n=int(input())
+i=1
+if n==0:
+    print("\"3 ning darajasi emas\"")
+else:
+    while n>i:
+        i*=3
+        
+    if n==i:
+        print("\"3 ning darajasi\"")
+    else:
+        print("\"3 ning darajasi emas\"")
